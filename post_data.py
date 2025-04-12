@@ -3,7 +3,7 @@ import random
 import datetime
 
 API_URL = "https://analytics-api-eu.piano.io/import/measurements/v1"
-API_KEY = "c27d9f09dc98_82c3a18de25db3375ea5d7afeeb378ac0b0e2c72"
+API_KEY = ${{ secrets.pa_api_key }}
 
 def generate_measurements():
     today = datetime.date.today()
