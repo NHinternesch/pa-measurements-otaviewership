@@ -1,9 +1,10 @@
 import requests
 import random
 import datetime
+import os
 
 API_URL = "https://analytics-api-eu.piano.io/import/measurements/v1"
-API_KEY = ${{ secrets.PA_API_KEY }}
+API_KEY = os.environ["PA_API_KEY"]
 
 def generate_measurements():
     today = datetime.date.today()
