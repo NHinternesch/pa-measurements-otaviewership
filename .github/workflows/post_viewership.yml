@@ -23,3 +23,5 @@ jobs:
 
       - name: Run the data POST script
         run: python post_data.py
+        env:
+          PA_API_KEY: ${{ secrets.PA_API_KEY }}
